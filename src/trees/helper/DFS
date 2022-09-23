@@ -1,0 +1,39 @@
+PreOrder
+-root
+-left
+-right
+
+1. Logic first
+2. Recurse on left
+3. Recurse on right
+
+
+PostOrder
+-left
+-right
+-root
+
+1. Recurse on children first
+2. Perform logic on current node
+
+NOTE:
+- No logic is done until we reach leaf node since calling children takes priority
+- Root is the last node where logic is done
+
+
+InOrder
+-left
+-root
+-right
+
+1. Recurse on left child
+2. Perform logic on current node
+3. Recurse on right child
+
+NOTE:
+- No logic is done until node without left child since calling on left child takes priority over logic
+
+
+======
+
+IMPORTANT: Type of DFS doesn't matter in most problems

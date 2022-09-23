@@ -1,0 +1,23 @@
+Sliding window is a form of two pointer
+
+function fn(arr):
+    left = 0
+    for right in [0, arr.length - 1]:
+        while left < right AND condition from problem not met:
+            Do some logic to "remove" element at arr[left] from window
+            left++
+
+        Do some logic to "add" element at arr[right] to window
+
+A nested while loop is not considered a nested for loop because it can only iterate n times
+Even though the while loop can run n times on one iteration of the for loop, that would mean it wouldn't run at all for all the other iterations of the for loop.
+The time complexity of this solution is O(n) because each element is visited at most twice. In the worst case scenario,
+all elements will be visited once by the start pointer and another time by the end pointer.
+
+1. move the right pointer until the condition is met
+2. take the largest / smallest value
+3. if the value is over then we slide the right left pointer
+4. check the value again to see if it's within an acceptale range
+5. slide right pointer all the way to the right
+6. slide the left pointer all the way to the left if the right pointer is already there
+
